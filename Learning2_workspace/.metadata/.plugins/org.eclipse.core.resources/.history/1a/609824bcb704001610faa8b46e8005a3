@@ -1,0 +1,39 @@
+/**
+ * this class performs general operations like update,delete,add,show on DB using Hibernate ORM. 
+ */
+package com.example;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+//import org.hibernate.SessionFactory;
+
+public class PersonUtil {
+
+	public static void main(String[] args) {
+		try {
+			login("amar","djsdks");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	//private static SessionFactory sessionFactory;
+
+	public static String login(String un, String pass) throws SQLException {
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Hibernate", "root", "root");
+		Statement s = con.createStatement();
+		ResultSet rs = s.executeQuery("SELECT * FROM Person");
+		while (rs.next()) {
+			System.out.println(rs.getString("UserName"));
+		}
+		Person p = new Person();
+		p.setEmail(un);
+		return p.getEmail();
+	}
+
+}
