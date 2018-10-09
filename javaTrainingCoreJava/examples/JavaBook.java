@@ -64,11 +64,11 @@ public class JavaBook {
 
 		Customer cArr[] = new Customer[11];
 
-		cArr[0] = new Customer(1, new Address("971", "ranjit ave"));
-		cArr[1] = new Customer(2, new Address("223", "ranjit ave"));
-		cArr[2] = new Customer(3, new Address("323", "ranjit ave"));
-		cArr[6] = new Customer(7, new Address("34", "ranjit ave"));
-		cArr[10] = new Customer(10, new Address("232", "ranjit ave"));
+		cArr[0] = new Customer(1, new AddressTest("971", "ranjit ave"));
+		cArr[1] = new Customer(2, new AddressTest("223", "ranjit ave"));
+		cArr[2] = new Customer(3, new AddressTest("323", "ranjit ave"));
+		cArr[6] = new Customer(7, new AddressTest("34", "ranjit ave"));
+		cArr[10] = new Customer(10, new AddressTest("232", "ranjit ave"));
 
 		for (Customer cstmer : cArr) {
 			if (cstmer != null) {

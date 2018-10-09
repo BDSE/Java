@@ -5,7 +5,7 @@ public class Toll implements TollBooth {
 	private int numberOfTrucks = 0;
 	private int total = 0;
 	private int tollTotal = 0;
-	int axles = 0;
+	static int axles = 0;
 	int weight = 0;
 
 	public int calculateToll(Truck truck) {

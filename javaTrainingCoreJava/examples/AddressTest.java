@@ -1,10 +1,10 @@
 package examples;
 
-public class Address {
+public class AddressTest {
 	private String hno;
 	private String Addressline;
 
-	Address(String hno, String Addressline) {
+	AddressTest(String hno, String Addressline) {
 		this.hno = hno;
 		this.Addressline = Addressline;
 	}

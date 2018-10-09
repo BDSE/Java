@@ -12,7 +12,7 @@ package examples;
 public class AggregationExample {
 
 	public static void main(String[] args) {
-		Address add = new Address("Hno 971", "Ranjit Avenue Asr.");
+		AddressTest add = new AddressTest("Hno 971", "Ranjit Avenue Asr.");
 		Customer c = new Customer(100, add);
 
 		System.out.println("Aggregation Example" + c.getAddress().getAddressLine());

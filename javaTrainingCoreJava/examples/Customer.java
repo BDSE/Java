@@ -11,9 +11,9 @@ package examples;
 
 public class Customer {
 	private int id;
-	private Address address; //this is aggregation.
+	private AddressTest address; //this is aggregation.
 
-	Customer(int id, Address add) {
+	Customer(int id, AddressTest add) {
 		this.id = id;
 		this.address = add;
 	}
@@ -22,7 +22,7 @@ public class Customer {
 		return id;
 	}
 
-	public Address getAddress() {
+	public AddressTest getAddress() {
 		return address;
 	}
 	
